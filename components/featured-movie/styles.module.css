@@ -1,0 +1,176 @@
+ 
+  .movieTitle {
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 900;
+    line-height: 72px;
+    max-width: 25ch;
+  }
+  
+  .overview {
+    font-size: 24px;
+    max-width: 50ch;
+  }
+  
+  .shortOverview {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .movieWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  
+  .addContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .addButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eee;
+    border-radius: 999px;
+    width: 62px;
+    height: 62px;
+    color: #eee;
+  }
+  
+ 
+  
+  .moviePosterOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.9) 30%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: -1;
+  }
+  
+  .moviePoster img {
+    height: auto !important;
+    z-index: -2;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  .movieContainer {
+    position: relative;
+  }
+  .additionalInfo {
+    margin:25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .additionalInfo p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    flex: 1;
+    margin-right: 10px; 
+  }
+  .divContainer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #f0f0f0; 
+    padding: 10px; 
+  }
+  
+
+  .categoryMain {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+ 
+  .activeTab {
+    background-color: #242A32; 
+    color: #fff; 
+    border-radius: 5px; 
+  }
+  
+  .categoriesMain {
+    display: flex;
+    height: 72px;
+    gap: 24px;
+  }
+  .castContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .castCard {
+    text-align: center;
+    width: 120px;
+  }
+  
+  .castImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 5px; 
+  }
+  
+  .castImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .castName {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  
+
+  .reviewCard {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .userIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .userIcon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .reviewContent {
+    flex: 1;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .reviewsContainer {
+      /* ... */
+      overflow-y: auto;
+    }
+  }
